@@ -1,0 +1,100 @@
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 120px;
+  margin-top: 30px;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url(../img/hellsing-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #00c0da;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  width: 200px;
+  border: 5px solid #00c0da;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+hr {
+  width: 250px;
+  border-top: 3px solid #999;
+}
+
+section {
+  min-height: 600px;
+}
+
+.pKiri,
+.pKanan {
+  opacity: 0;
+  transform: translate(-150px, 0) rotate(15deg);
+  transition: 2s;
+}
+
+.pKanan {
+  transform: translate(150px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.portfolio {
+  background-color: #eee;
+}
+
+.portfolio .thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+  /* transition: 3s; */
+}
+
+.portfolio .thumbnail.muncul {
+  /* jika ada class="thumbnail muncul" maka css aktif */
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.portfolio img {
+  /* width: 300px; */
+  max-height: 400px;
+}
+
+.contact {
+  min-height: 800px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #333;
+  padding-top: 30px;
+}
+
+footer p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+footer p i {
+  color: salmon;
+}
